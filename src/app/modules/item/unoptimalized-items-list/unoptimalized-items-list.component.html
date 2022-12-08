@@ -1,0 +1,46 @@
+<div class="m-4">
+    <div class="row py-2">
+        <div class="col-3">Filter by:</div>
+        <div class="col">
+            <input type='text' [(ngModel)]='filter' />
+        </div>
+    </div>
+        <ul class="list-group list-group-flush py-2">
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col">No</div>
+                    <div class="col">Name</div>
+                    <div class="col">Price</div>
+                    <div class="col">Quantity</div>
+                    <div class="col"></div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row" [ngClass]="{'clicked': false}">
+                    <div class="col">1</div>
+                    <div class="col">One</div>
+                    <div class="col">25.34</div>
+                    <div class="col">2</div>
+                    <a class="col blue" [routerLink]="['/items', 1]">Details</a>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row" [ngClass]="{'clicked': false}">
+                    <div class="col">2</div>
+                    <div class="col">Two</div>
+                    <div class="col">26.00</div>
+                    <div class="col">4</div>
+                    <a class="col blue" [routerLink]="['/items', 2]">Details</a>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row" [ngClass]="{'clicked': false}">
+                    <div class="col">3</div>
+                    <div class="col">Three</div>
+                    <div class="col">5.12</div>
+                    <div class="col">6</div>
+                    <a class="col blue" [routerLink]="['/items', 3]">Details</a>
+                </div>
+            </li>
+        </ul>
+</div>
