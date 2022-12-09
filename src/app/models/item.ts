@@ -5,4 +5,6 @@ export interface Item {
   price?: number;
   imageUrl?: string;
   isClicked?: boolean;
+  percentage?: number;
+  createDate?: number;
 }
