@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { ItemModule } from './modules/item/item.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SharedModule } from './modules/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     RouterModule.forRoot([
       { path: '', component: MainPageComponent },
       { path: '**', redirectTo: '', pathMatch: 'full' }]),
-    ItemModule
+    ItemModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
