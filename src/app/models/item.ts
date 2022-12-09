@@ -6,5 +6,5 @@ export interface Item {
   imageUrl?: string;
   isClicked?: boolean;
   percentage?: number;
-  createDate?: number;
+  createDate?: string;
 }
