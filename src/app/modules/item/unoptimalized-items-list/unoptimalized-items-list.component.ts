@@ -5,11 +5,11 @@ import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-unoptimalized-items-list',
-  templateUrl: './unoptimalized-items-list.component.html',
+  //templateUrl: './unoptimalized-items-list.component.html',
   //templateUrl: './unoptimalized-items-list.component-1-1.html',// rozwiązanie 1.1
   //templateUrl: './unoptimalized-items-list.component-1-2.html',// rozwiązanie +1.2
   //templateUrl: './unoptimalized-items-list.component-1-3.html',// rozwiązanie +1.3
-  //templateUrl: './unoptimalized-items-list.component-1-6.html',// rozwiązanie +1.6
+  templateUrl: './unoptimalized-items-list.component-1-6.html',// rozwiązanie +1.6
   styleUrls: ['./unoptimalized-items-list.component.scss']
 })
 export class UnoptimalizedItemsListComponent implements OnInit {
