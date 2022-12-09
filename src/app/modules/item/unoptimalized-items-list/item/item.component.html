@@ -2,6 +2,8 @@
     <div class="row" [ngClass]="{'clicked': item.isClicked}">
         <div class="col">{{item.no}}</div>
         <div class="col">{{item.name}}</div>
+        <!--<div class="col">{{item.name | lowPrice:item.price}}</div> --><!-- rozwiązanie 3.1 -->
+        <!--<div class="col">{{item.name | fullStock:item.quantity}}</div> --><!-- rozwiązanie 3.2 -->
         <!--<div class="col">{{item.name | uppercase}}</div> --><!-- rozwiązanie 2.1 -->
         <div class="col">{{item.price | currency:'USD':'symbol'}}</div><!-- rozwiązanie +1.5 -->
         <div class="col">{{item.quantity}}</div>
