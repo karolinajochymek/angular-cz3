@@ -4,7 +4,7 @@
             {{title}}
         </div>
         <!-- rozwiązanie 5.1 i 5.2 - wspólne checkboxy -->
-        <div class="form-check">
+        <!-- <div class="form-check">
             <input class="form-check-input" type="checkbox" 
                 [(ngModel)]="firstPermission" id="firstPermission">
             <label class="form-check-label" for="firstPermission">
@@ -17,8 +17,11 @@
             <label class="form-check-label" for="secondPermission">
               Second checkbox
             </label>
-          </div>
-          <button type="button" class="btn btn-info" routerLink="/items"
-            *appCheckPermission="firstPermission;secondPermission:secondPermission">Item list</button> <!-- rozwiązanie 5.2 -->
-        </div>
+          </div> -->
+         <button type="button" class="btn btn-info" routerLink="/items">Item list</button> 
+        <!-- <button type="button" class="btn btn-info" routerLink="/items"
+            *appSimpleCheckPermission="firstPermission">Item list</button> --> <!-- rozwiązanie 5.1 -->
+        <!-- <button type="button" class="btn btn-info" routerLink="/items"
+        *appCheckPermission="firstPermission;secondPermission:secondPermission">Item list</button> --><!-- rozwiązanie 5.2 -->
+    </div>
 </div>
