@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { ItemModule } from './modules/item/item.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SharedModule } from './modules/shared/shared.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SharedModule } from './modules/shared/shared.module';
       { path: '', component: MainPageComponent },
       { path: '**', redirectTo: '', pathMatch: 'full' }]),
     ItemModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

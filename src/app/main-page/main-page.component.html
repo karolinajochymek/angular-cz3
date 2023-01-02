@@ -3,6 +3,22 @@
         <div class="card-title">
             {{title}}
         </div>
-        <button type="button" class="btn btn-info" routerLink="/items">Item list</button>
-    </div>
+        <!-- rozwiązanie 5.1 i 5.2 - wspólne checkboxy -->
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" 
+                [(ngModel)]="firstPermission" id="firstPermission">
+            <label class="form-check-label" for="firstPermission">
+              First checkbox
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" 
+                [(ngModel)]="secondPermission" id="secondPermission">
+            <label class="form-check-label" for="secondPermission">
+              Second checkbox
+            </label>
+          </div>
+          <button type="button" class="btn btn-info" routerLink="/items"
+            *appCheckPermission="firstPermission;secondPermission:secondPermission">Item list</button> <!-- rozwiązanie 5.2 -->
+        </div>
 </div>
