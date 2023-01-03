@@ -6,6 +6,7 @@ import { UpperCaseByLastIndxPipe } from './pipes/upper-case-by-last-indx.pipe';
 import { TextGeneratorPipe } from './pipes/text-generator.pipe';
 import { SimpleCheckPermissionDirective } from './directives/simple-check-permission.directive';
 import { CheckPermissionDirective } from './directives/check-permission.directive';
+import { ColorChangeDirective } from './directives/color-change.directive';
 
 @NgModule({
     declarations: [
@@ -14,7 +15,8 @@ import { CheckPermissionDirective } from './directives/check-permission.directiv
     UpperCaseByLastIndxPipe,
     TextGeneratorPipe,
     SimpleCheckPermissionDirective,
-    CheckPermissionDirective
+    CheckPermissionDirective,
+    ColorChangeDirective
   ],
     imports: [
       CommonModule,
@@ -25,7 +27,8 @@ import { CheckPermissionDirective } from './directives/check-permission.directiv
       UpperCaseByLastIndxPipe,
       TextGeneratorPipe,
       SimpleCheckPermissionDirective,
-      CheckPermissionDirective
+      CheckPermissionDirective,
+      ColorChangeDirective
     ]
   })
   export class SharedModule { }
