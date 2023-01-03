@@ -17,7 +17,13 @@
                     <div class="col"></div>
                 </div>
             </li>
-            <li class="list-group-item" *ngFor="let item of filteredItems" appColorChange="blue"> <!-- rozwiązanie 6 -->
+            <li class="list-group-item" *ngFor="let item of filteredItems"> <!-- rozwiązanie +1.6 generowanie wierszy na podstawie property, która zawiera filtr na bazie wartosci pola filter -->
+                <!--<li class="list-group-item" *ngFor="let item of filteredItems; even as isEven" [ngClass]="{'clicked': isEven}"> --> <!-- rozwiązanie 4.1 -->
+                <!--<li class="list-group-item" *ngFor="let item of filteredItems; odd as isOdd" [ngClass]="isOdd ? 'clicked' : ''">-->  <!-- rozwiązanie 4.2 -->
+                <!--<li class="list-group-item" *ngFor="let item of filteredItems; first as isFirst" [ngClass]="isFirst ? 'clicked' : ''"> --> <!-- rozwiązanie 4.3 -->
+                <!--<li class="list-group-item" *ngFor="let item of filteredItems; last as isLast" [ngClass]="isLast ? 'clicked' : ''"> --> <!-- rozwiązanie 4.4 -->
+                <!--<li class="list-group-item" *ngFor="let item of filteredItems" appColorChange> --> <!-- rozwiązanie 6 -->
+
                 <app-item [item]="item"></app-item>
             </li>
         </ul>
