@@ -1,0 +1,10 @@
+<div class="card container my-4"> 
+    <div class="card-body">
+        <div class="card-title">
+            <span class="font-weight-bold">Parent component </span>
+        </div>
+        <input type='text' [(ngModel)]='typedWord' />
+        <app-child [word]="typedWord"></app-child>
+    </div>
+    <button type="button" class="btn btn-light my-4 mr-auto"  routerLink="/"> < Back</button>
+</div>

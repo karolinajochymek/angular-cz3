@@ -10,6 +10,7 @@ import { ItemModule } from './modules/item/item.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SharedModule } from './modules/shared/shared.module';
 import { FormsModule } from '@angular/forms';
+import { LifeCycleHooksModule } from './modules/life-cycle-hooks/life-cycle-hooks.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FormsModule } from '@angular/forms';
       { path: '**', redirectTo: '', pathMatch: 'full' }]),
     ItemModule,
     SharedModule,
-    FormsModule
+    FormsModule,
+    LifeCycleHooksModule
   ],
   providers: [],
   bootstrap: [AppComponent]
